@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #8e44ad, #3498db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    direction: rtl; 
+    overflow: hidden; 
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 90%; 
+    max-height: 90%; 
+    overflow: hidden; 
+}
+
+.table-container {
+    max-height: 70vh; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    direction: ltr; 
+}
+
+.scoreboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 18px; 
+}
+
+thead {
+    background-color: #3498db;
+    color: white;
+    font-size: 20px; 
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center; 
+}
+
+th {
+    cursor: pointer;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+td:last-child, th:last-child {
+    width: 50px; 
+}
+
+.table-container::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: #8e44ad;
+    border-radius: 10px; 
+    border: 2px solid white; 
+}
